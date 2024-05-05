@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+ <html>
+<head>
+<title>Validar Formulario com Javascript</title>
+<script>
+
+function enviardados(){
+
+if(document.dados.tx_nome.value=="" || document.dados.tx_nome.value.length < 3)
+{
+alert( "Preencha campo NOME corretamente!" );
+document.dados.tx_nome.focus();
+return false;
+}
+
+
+
+if( document.dados.tx_email.value=="" || document.dados.tx_email.value.indexOf('@')==-1 || document.dados.tx_email.value.indexOf('.')==-1 )
+{
+alert( "Preencha campo E-MAIL corretamente!" );
+document.dados.tx_email.focus();
+return false;
+}
+
+
+
+if (document.dados.tx_mensagem.value=="")
+{
+alert( "Preencha o campo MENSAGEM!" );
+document.dados.tx_mensagem.focus();
+return false;
+}
+
+
+if (document.dados.tx_mensagem.value.length < 30 )
+{
+alert( "� necessario preencher o campo MENSAGEM com mais de 30 caracteres!" );
+document.dados.tx_mensagem.focus();
+return false;
+}
+
+
+
+return true;
+}
+</script>
+
+</head>
+<body>
+<a href="vernovas.php">Ver Novas</a> <a href="vertodas.php">Ver Todas</a> <br /> <br />
+<form action="inseremensagem.php" method="post" name="dados" onSubmit="return enviardados();" >
+<table width="588" border="0" align="center" >
+	<tr>
+	<td width="118"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Nome completo:</font></td>
+	<td width="460">
+	<input name="nome" type="text" class="formbutton" id="tx_nome" size="52" maxlength="150">
+	</td>
+	</tr>
+	<tr>
+	<td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">E-mail:</font></td>
+	<td><font size="2">
+	<input name="email" type="text" id="tx_email" size="52" maxlength="150" class="formbutton">
+	</font></td>
+	</tr>
+	<tr>
+	<td><font face="Verdana, Arial, Helvetica, sans-serif"><font size="1">Mensagem<strong>:</strong></font></font></td>
+	<td rowspan="2"><font size="2">
+	<textarea name="mensagem" cols="50" rows="8" class="formbutton" id="tx_mensagem" input ></textarea>
+	</font></td>
+	</tr>
+	<tr>
+	<td height="85"><p><strong><font face="Verdana, Arial, Helvetica, sans-serif"><font size="1">
+	</font></font></strong></p></td>
+	</tr>
+	<tr>
+	<td height="22"></td>
+	<td>
+	<input name="Submit" type="submit"  class="formobjects" value="Enviar dados">
+	<input name="Reset" type="reset" class="formobjects" value="Redefinir">
+	</td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+

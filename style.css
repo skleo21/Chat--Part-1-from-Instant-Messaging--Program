@@ -1,0 +1,122 @@
+﻿body {
+	margin: auto;
+	padding: 20px;
+}
+
+#header {
+	width: 90%;
+	color: maroon;
+	font-size: 32px;
+	padding: 10px 10px 10px 0px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid green;
+}
+
+#footer {
+	width: 90%;
+	border-top: 1px solid green;
+	margin-top: 20px;
+	color: #336699;
+	padding-top: 10px;	
+}
+.texto{
+	color: maroon;
+	font-size:30px;
+}
+.texto1{
+	color: maroon;
+	font-size:20px;
+}
+
+table.tabela {
+  border: 1px solid #1C6EA4;
+  background-color: #FEFEFE;
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.tabela td, table.tabela th {
+  border: 1px solid #AA9C9F;
+  padding: 1px 2px;
+}
+table.tabela tbody td {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1D1D1D;
+}
+table.tabela tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.tabela thead {
+  background: #901104;
+  background: -moz-linear-gradient(top, #ac4c43 0%, #9b281d 66%, #901104 100%);
+  background: -webkit-linear-gradient(top, #ac4c43 0%, #9b281d 66%, #901104 100%);
+  background: linear-gradient(to bottom, #ac4c43 0%, #9b281d 66%, #901104 100%);
+  border-bottom: 2px solid #A7141D;
+}
+table.tabela thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #D0E4F5;
+}
+table.tabela thead th:first-child {
+  border-left: none;
+}
+
+table.tabela tfoot td {
+  font-size: 14px;
+}
+table.tabela tfoot .links {
+  text-align: right;
+}
+table.tabela tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+
+table.TabelaRegisto {
+  background-color: #F5F2F4;
+  width: 50%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.TabelaRegisto td, table.TabelaRegisto th {
+  border: 0px solid #EB3F13;
+  padding: 0px 0px;
+}
+table.TabelaRegisto tbody td {
+  font-size: 15px;
+  color: #23025D;
+}
+table.TabelaRegisto thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #FFF5F6;
+}
+table.TabelaRegisto thead th {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+table.TabelaRegisto tfoot td {
+  font-size: 14px;
+}
+table.TabelaRegisto tfoot .links {
+  text-align: right;
+}
+table.TabelaRegisto tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
